@@ -1,0 +1,31 @@
+.text-area{
+    animation: transition-text 1s ease;
+}
+.image-area{
+    animation: transition-image 1s ease;
+}
+
+@keyframes transition-text{
+    from {
+        /* opacity: 0; */
+        scale: 0;
+        transform: rotate(20deg);
+
+    }to{
+        scale: 1;
+        /* opacity: 1; */
+        transform: rotate(0deg);
+
+    }
+}
+@keyframes transition-image{
+    from {
+        /* opacity: 0; */
+        scale: 0;
+        transform: translateX(-1000px);
+
+    }to{
+        scale: 1;
+        transform: translateX(0px);
+    }
+}
